@@ -3,10 +3,11 @@ Website for The Blown Save Podcast
 
 ## Todo
     [] Initialize components in list
-    [] Set up router and routes
-    [] Host Site 
+        [] Set up Routes
 ## Working
 ## Complete
+    [] Set up router
+    [] Host Site 
 
 ### Planning
 #### Component List
