@@ -1,18 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Navbar from "./components/Navbar.js";
+import Footer from './components/Footer.js';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            The Blown Save Podcast
-          </p>
-        </header>
-      </div>
+      <Navbar/>
+      <Footer/>
     </Router>
   );
 }
