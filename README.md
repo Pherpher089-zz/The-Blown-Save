@@ -1,13 +1,18 @@
 # The-Blown-Save
 Website for The Blown Save Podcast
 
+# Technologies used
+- React
+- React-Router
+- SASS
+
 ## Todo
+## Working
     [] Initialize components in list
         [] Set up Routes
-## Working
 ## Complete
-    [] Set up router
-    [] Host Site 
+    [x] Set up router
+    [x] Host Site 
 
 ### Planning
 #### Component List
