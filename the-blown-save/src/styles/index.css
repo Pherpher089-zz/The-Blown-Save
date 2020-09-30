@@ -1,3 +1,11 @@
-
+.nav-container {
+  background-color: #4D4C4C;
+  display: flex;
+  flex-direction: row;
+}
+.nav-container a {
+  text-decoration: none;
+  color: white;
+}
 
 /*# sourceMappingURL=index.css.map */
