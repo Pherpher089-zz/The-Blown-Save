@@ -1,15 +1,24 @@
 @import reset
 @import variables
+@import mixins
 
 .nav-container
     background-color: $backgroundColor
     display: flex
     flex-direction: row
     justify-content: space-between
-    img
+    align-items: center
+    .nav-logo
         height: 6.5rem
         width: auto
         padding-left: 6rem
-    a
-        text-decoration: none
-        color: white
+    .nav-buttons
+        display: flex
+        width: 20rem
+        justify-content: space-around
+        padding-right: 6rem
+        a
+            font-size: 2rem
+            +Button($backgroundColor)
+            text-decoration: none
+            color: white
