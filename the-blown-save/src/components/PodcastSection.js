@@ -2,7 +2,7 @@ import React from 'react';
 
 function PodcastSection(props) {
     return (
-        <div>
+        <div className='podcast-container'>
             <h1>Podcast Section</h1>
         </div>
     )

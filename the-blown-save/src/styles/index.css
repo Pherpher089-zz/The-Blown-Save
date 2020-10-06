@@ -76,8 +76,107 @@ table {
 }
 
 .hero-container {
-  height: 90vh;
-  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 50rem;
+  background-color: white;
+}
+.hero-container .hero-img {
+  height: 50rem;
+}
+.hero-container .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-container .hero-content h1 {
+  color: black;
+  font-size: 6rem;
+  text-align: center;
+  font-family: rockwell;
+  text-shadow: 2px 2px 4px #00000086;
+  width: 45rem;
+  font-size: 6rem;
+  font-weight: bold;
+}
+.hero-container .hero-content h3 {
+  color: grey;
+  font-size: 2rem;
+  text-align: center;
+  font-family: rockwell;
+  text-shadow: 2px 2px 4px #00000086;
+  margin: 0.5rem;
+}
+.hero-container .hero-content .hero-buttons {
+  margin: 2rem;
+  width: 30rem;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hero-container .hero-content .hero-buttons button {
+  color: red;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 2px;
+  box-shadow: 0px 0px 4px #00000086;
+  font-size: 1.7rem;
+  font-family: rockwell;
+  outline: none;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  text-shadow: 2px 2px 4px #00000086;
+}
+.hero-container .hero-content .hero-buttons button:hover {
+  color: white;
+  background-color: red;
+}
+.hero-container .hero-content .hero-buttons button:active {
+  background-color: #a00000;
+  border: 2px solid #a00000;
+}
+.hero-container .hero-content .hero-buttons img {
+  height: 4.5rem;
+  opacity: 50%;
+}
+.hero-container .hero-content .hero-buttons img:hover {
+  opacity: 100%;
+}
+.hero-container .hero-content .hero-buttons img:active {
+  opacity: 70%;
+}
+
+.podcast-container {
+  background-color: #4D4C4C;
+  height: 50rem;
+}
+
+.merch-container {
+  background-color: #4D4C4C;
+  height: 50rem;
+}
+
+.footer-container {
+  align-items: center;
+  background-color: #4D4C4C;
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+  justify-content: flex-end;
+}
+.footer-container img {
+  vertical-align: center;
+  height: 5rem;
+  margin-right: 1rem;
+  opacity: 50%;
+}
+.footer-container img:hover {
+  opacity: 100%;
+}
+.footer-container img:active {
+  opacity: 70%;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -2,7 +2,7 @@ import React from 'react';
 
 function MerchSection() {
     return(
-        <div>
+        <div className='merch-container'>
             <h1>Merch Section</h1>
         </div>
     )

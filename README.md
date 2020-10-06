@@ -11,7 +11,8 @@ Website for The Blown Save Podcast
 - [ ] Merch Section
 - [ ] Footer
 - [ ] About Page
-- [ ] Contact Form 
+- [ ] Contact Form
+- [ ] Set up back up font-families
 ## Working
 - [ ] Hero Section
 ## Complete
