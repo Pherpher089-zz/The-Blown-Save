@@ -75,4 +75,9 @@ table {
   background-color: grey;
 }
 
+.hero-container {
+  height: 90vh;
+  background-color: pink;
+}
+
 /*# sourceMappingURL=index.css.map */

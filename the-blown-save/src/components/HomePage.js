@@ -1,8 +1,14 @@
 import React from 'react';
-function HomePage(props){
+import HeroSection from './HeroSection';
+import PodcastSection from './PodcastSection';
+import MerchSection from './MerchSection'
+
+function HomePage(){
     return (
         <div>
-            <h1>Home Page</h1>
+            <HeroSection />
+            <PodcastSection />
+            <MerchSection />
         </div>
     )
 }

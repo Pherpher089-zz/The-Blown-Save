@@ -1,0 +1,22 @@
+
+.nav-container
+    height: 5rem
+    background-color: $backgroundColor
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    .nav-logo
+        height: 4rem
+        width: auto
+        padding-left: 6rem
+    .nav-buttons
+        display: flex
+        width: 26rem
+        justify-content: space-around
+        padding-right: 6rem
+        a
+            font-size: 2rem
+            +Button($backgroundColor)
+            text-decoration: none
+            color: white

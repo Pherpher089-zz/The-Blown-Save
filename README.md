@@ -7,12 +7,18 @@ Website for The Blown Save Podcast
 - SASS
 
 ## Todo
+- [ ] Podcast Section
+- [ ] Merch Section
+- [ ] Footer
+- [ ] About Page
+- [ ] Contact Form 
 ## Working
-    [] Initialize components in list
-        [] Set up Routes
+- [ ] Hero Section
 ## Complete
-    [x] Set up router
-    [x] Host Site 
+- [x] Initialize components in list
+- [x] Set up Routes
+- [x] Set up router
+- [x] Host Site 
 
 ### Planning
 #### Component List
