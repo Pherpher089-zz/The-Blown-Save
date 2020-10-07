@@ -12,7 +12,7 @@ function HeroSection() {
                 <h3>some subtext goes here</h3>
                 <div className="hero-buttons">
                     <button>Subscribe ></button>
-                    <img src={InstaGram} alt='insta'/>
+                    <img src={require('../img/Instagram_1.png')} alt='insta'/>
                     <img src={Twitter} alt='Twitter'/>
                     <img src={Facebook} alt='FB'/>
                 </div>
