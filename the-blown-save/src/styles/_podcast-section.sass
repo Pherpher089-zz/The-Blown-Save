@@ -6,7 +6,7 @@
     align-items: center
     .player-container
         background-color: $backgroundColor
-        border-radius: 1rem
+        border-radius: 2.4rem
         display: flex
         align-items: center
         justify-content: center
@@ -14,7 +14,36 @@
 
         width: 83rem
         .player-inner
+            align-items: center
             background-color: white
-            border-radius: 1rem
+            border-radius: 2.4rem
+            display: flex
+
             height: 20rem
             width: 77rem
+            .player-content
+                padding: 3rem
+                display: flex
+                flex-direction: row
+                align-items: center
+                .player-icon
+                    height: 6rem
+                .player-text-container
+                    height: 15rem
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    margin-left: 3rem
+                    .date
+                        font-size: 1.2rem
+                        margin-bottom: 2rem
+                    .title-and-length
+                        display: flex
+                        flex-direction: row
+                        justify-content: space-between
+                        width: 63rem
+                        h1
+                            font-size: 3rem
+
+                        p
+                            font-size: 1.75rem

@@ -157,7 +157,7 @@ table {
 }
 .podcast-container .player-container {
   background-color: #4D4C4C;
-  border-radius: 1rem;
+  border-radius: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,10 +165,44 @@ table {
   width: 83rem;
 }
 .podcast-container .player-container .player-inner {
+  align-items: center;
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 2.4rem;
+  display: flex;
   height: 20rem;
   width: 77rem;
+}
+.podcast-container .player-container .player-inner .player-content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.podcast-container .player-container .player-inner .player-content .player-icon {
+  height: 6rem;
+}
+.podcast-container .player-container .player-inner .player-content .player-text-container {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 3rem;
+}
+.podcast-container .player-container .player-inner .player-content .player-text-container .date {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.podcast-container .player-container .player-inner .player-content .player-text-container .title-and-length {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 63rem;
+}
+.podcast-container .player-container .player-inner .player-content .player-text-container .title-and-length h1 {
+  font-size: 3rem;
+}
+.podcast-container .player-container .player-inner .player-content .player-text-container .title-and-length p {
+  font-size: 1.75rem;
 }
 
 .merch-container {
