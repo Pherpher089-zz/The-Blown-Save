@@ -1,29 +1,20 @@
 import React, {useState} from 'react';
- 
-import PlayIcon from '../imgs/play_icon.png'
+
+//Podcast site icons
+import ApplePodcastIcon from '../imgs/Podcast_Icons/podcast_icon_512x512.png'
+import OvercastIcon from '../imgs/Podcast_Icons/overcast_icon_512x512.png';
+import RssIcon from '../imgs/Podcast_Icons/rss_icon_512x512.png';
+import SpotifyIcon from '../imgs/Podcast_Icons/spotify_icon_512x512.png'
+import StitcherIcon from '../imgs/Podcast_Icons/stitcher_icon_512x512.png';
+
+// The current podcast audio section
 import CurrentEpisode from '../audio/tbsp_ep32.mp3'
 
-const audio = new Audio(CurrentEpisode);
-audio.preload = "metadata"
+//Placing icons in array
+const icons = [ApplePodcastIcon, OvercastIcon, 
+    RssIcon, SpotifyIcon, StitcherIcon]
+
 function PodcastSection(props) {
-    
-    const [state, setState] = useState({
-        isPlaying:false,
-        pauseTime: null,
-        episodeNum: 32,
-        duration: audio.duration
-    })
-
-    const onPlay = () => {
-        if(!state.isPlaying) {
-            audio.play();
-            setState({...state, isPlaying: true})
-        } else {
-            audio.pause();
-            setState({...state, isPlaying: false})
-        }
-    }
-
     return (
         <div className='podcast-container'>
             <div className='player-container'>
@@ -38,7 +29,13 @@ function PodcastSection(props) {
                     </div>
                 </div>
             </div>
-            <div className='podcast-icons'></div>
+            <div className='podcast-icons'>
+                {icons.map(icon => {
+                    return(
+                        <div className="podcast-icon"> <img src={icon}/> </div>
+                    )
+                })}
+            </div>
         </div>
     )
 }

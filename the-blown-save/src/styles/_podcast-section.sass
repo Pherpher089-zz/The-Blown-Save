@@ -1,8 +1,9 @@
 .podcast-container
-    background-color: grey
+    background-image: url('../imgs/Hero/hero_img_00.jpg')
     display: flex
-    height: 80rem
-    justify-content: center
+    flex-direction: column
+    justify-content: space-around
+    height: 70rem
     align-items: center
     .player-container
         background-color: $backgroundColor
@@ -45,3 +46,17 @@
                 p
                     font-size: 1.75rem
                     padding-left: 3rem
+    .podcast-icons
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        width: 55%
+        .podcast-icon
+            align-content: center
+            border: 3px solid black
+            display: flex
+            height: 15rem
+            width: 10rem
+            img
+                padding: 2rem
+                height: 6rem
