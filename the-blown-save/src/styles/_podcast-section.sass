@@ -18,32 +18,30 @@
             background-color: white
             border-radius: 2.4rem
             display: flex
-
-            height: 20rem
+            height: 22rem
             width: 77rem
             .player-content
-                padding: 3rem
+                align-items: flex-start
                 display: flex
-                flex-direction: row
-                align-items: center
-                .player-icon
-                    height: 6rem
-                .player-text-container
-                    height: 15rem
+                flex-direction: column
+                height: 60%
+                justify-content: space-between
+                padding: 0 3rem 0 3rem
+                .title-date
+                    padding-left: 3rem
+                    align-items: center
+                    width: 90%
                     display: flex
-                    flex-direction: column
-                    justify-content: space
-                    margin-left: 3rem
+                    flex-direction: row
+                    justify-content: space-between
+
+                    h1
+                        font-size: 2.5rem
                     .date
                         font-size: 1.2rem
-                        margin-bottom: 2rem
-                    .title-and-length
-                        display: flex
-                        flex-direction: row
-                        justify-content: space-between
-                        width: 63rem
-                        h1
-                            font-size: 3rem
-
-                        p
-                            font-size: 1.75rem
+                .player
+                    background-color: white
+                    width: 100%
+                p
+                    font-size: 1.75rem
+                    padding-left: 3rem

@@ -169,40 +169,38 @@ table {
   background-color: white;
   border-radius: 2.4rem;
   display: flex;
-  height: 20rem;
+  height: 22rem;
   width: 77rem;
 }
 .podcast-container .player-container .player-inner .player-content {
-  padding: 3rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.podcast-container .player-container .player-inner .player-content .player-icon {
-  height: 6rem;
-}
-.podcast-container .player-container .player-inner .player-content .player-text-container {
-  height: 15rem;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: space;
-  margin-left: 3rem;
+  height: 60%;
+  justify-content: space-between;
+  padding: 0 3rem 0 3rem;
 }
-.podcast-container .player-container .player-inner .player-content .player-text-container .date {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-.podcast-container .player-container .player-inner .player-content .player-text-container .title-and-length {
+.podcast-container .player-container .player-inner .player-content .title-date {
+  padding-left: 3rem;
+  align-items: center;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 63rem;
 }
-.podcast-container .player-container .player-inner .player-content .player-text-container .title-and-length h1 {
-  font-size: 3rem;
+.podcast-container .player-container .player-inner .player-content .title-date h1 {
+  font-size: 2.5rem;
 }
-.podcast-container .player-container .player-inner .player-content .player-text-container .title-and-length p {
+.podcast-container .player-container .player-inner .player-content .title-date .date {
+  font-size: 1.2rem;
+}
+.podcast-container .player-container .player-inner .player-content .player {
+  background-color: white;
+  width: 100%;
+}
+.podcast-container .player-container .player-inner .player-content p {
   font-size: 1.75rem;
+  padding-left: 3rem;
 }
 
 .merch-container {

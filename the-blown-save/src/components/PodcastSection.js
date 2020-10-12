@@ -14,7 +14,7 @@ function PodcastSection(props) {
         duration: audio.duration
     })
 
-    const onPLay = () => {
+    const onPlay = () => {
         if(!state.isPlaying) {
             audio.play();
             setState({...state, isPlaying: true})
@@ -29,16 +29,12 @@ function PodcastSection(props) {
             <div className='player-container'>
                 <div className='player-inner'>
                     <div className="player-content">
-                        <img className="player-icon" src={PlayIcon} alt="Play Button" onClick={onPLay}/>
-                        <audio controls={}/>
-                        <div className='player-text-container'>
+                        <div className = "title-date">
+                            <h1>Episode 12: World of Womans Wrestling</h1>
                             <p className="date">October 7th, 2020</p>
-                            <div className='title-and-length'>
-                                <h1>Episode 12: World of Womans Wrestling</h1>
-                                <p>{audio.duration}</p>
-                            </div>
-                            <p>Description - Here is an example of what a description will look like. I think it's going to need at least a few sentences. </p>
                         </div>
+                        <audio className="player" controls src={CurrentEpisode}/>
+                        <p> Here is an example of what a description will look like. I think it's going to need at least a few sentences. </p>
                     </div>
                 </div>
             </div>
