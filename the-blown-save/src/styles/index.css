@@ -185,7 +185,7 @@ table {
   height: 15rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space;
   margin-left: 3rem;
 }
 .podcast-container .player-container .player-inner .player-content .player-text-container .date {
