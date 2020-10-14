@@ -21,8 +21,8 @@ function PodcastSection(props) {
                 <div className='player-inner'>
                     <div className="player-content">
                         <div className = "title-date">
-                            <h1>Episode 12: World of Womans Wrestling</h1>
-                            <p className="date">October 7th, 2020</p>
+                            <h1>The Blown Save Ep32</h1>
+                            <p className="date">October 9th, 2020</p>
                         </div>
                         <audio className="player" controls src={CurrentEpisode}/>
                         <p> Here is an example of what a description will look like. I think it's going to need at least a few sentences. </p>
