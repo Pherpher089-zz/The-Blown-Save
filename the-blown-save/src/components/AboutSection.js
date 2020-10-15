@@ -20,8 +20,8 @@ function AboutSection() {
                         <div className='content-group'>
                             <img src={PlaceHolder} alt="picture"/>
                             <div className='title-text' >
-                                <h1 className="right-title">Name 1</h1>
-                                <p className="right-text" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                                <h1 className="right-title bottom">Name 1</h1>
+                                <p className="right-text bottom" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
                             </div>
                         </div>
                     </div>

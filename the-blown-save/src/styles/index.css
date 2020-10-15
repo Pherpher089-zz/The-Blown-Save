@@ -273,15 +273,14 @@ table {
 .about-container .about-content-container .left-section .left-title, .about-container .about-content-container .right-section .left-title {
   text-align: center;
   margin: 2rem;
-  font-size: 5rem;
+  font-size: 6rem;
   color: white;
   font-weight: bolder;
 }
 .about-container .about-content-container .left-section .left-content, .about-container .about-content-container .right-section .left-content {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 1rem 2rem 2rem 2rem;
-  line-height: 2.5rem;
-  text-indent: 3rem;
+  line-height: 2.8rem;
 }
 .about-container .about-content-container .right-section {
   padding: 4rem;
@@ -310,6 +309,9 @@ table {
 .about-container .about-content-container .right-section .content-group .title-text .right-text {
   font-size: 2.5rem;
   line-height: 3rem;
+}
+.about-container .about-content-container .right-section .content-group .title-text .bottom {
+  padding-left: 2rem;
 }
 
 .footer-container {
