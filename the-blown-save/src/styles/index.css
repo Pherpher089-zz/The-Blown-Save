@@ -324,7 +324,9 @@ table {
   align-items: center;
 }
 .contact-container .form-container {
-  float: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #4D4C4C;
   border: 1px solid white;
   border-radius: 1rem;
@@ -332,13 +334,62 @@ table {
   width: 60vw;
 }
 .contact-container .form-container .contact-title {
+  margin-top: 2rem;
+  width: 50vw;
+  text-align: left;
   font-size: 3rem;
   font-weight: bold;
   color: white;
 }
-.contact-container .form-container .contact-title form .name-email {
+.contact-container .form-container .contact-form {
+  diplay: flex;
+  margin: 3rem;
+}
+.contact-container .form-container .contact-form .name-email {
+  margin-bottom: 2rem;
+  width: 50vw;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+}
+.contact-container .form-container .contact-form .name-email input {
+  margin-top: 1rem;
+  width: 23vw;
+  height: 1.5rem;
+}
+.contact-container .form-container .contact-form .message {
+  margin-bottom: 2rem;
+}
+.contact-container .form-container .contact-form .message textarea {
+  margin-top: 1rem;
+  width: 50vw;
+  height: 30vh;
+  color: white;
+}
+.contact-container .form-container .contact-form .title-field h2 {
+  color: white;
+  font-size: 2rem;
+}
+.contact-container .form-container .contact-form .title-field input, .contact-container .form-container .contact-form .title-field textarea {
+  background-color: #4D4C4C;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+.contact-container .form-container .contact-form .message-buttons button {
+  border-radius: 1rem;
+  height: 3.3rem;
+  color: white;
+  font-size: 1.8rem;
+}
+.contact-container .form-container .contact-form .message-buttons .submit {
+  margin-right: 2rem;
+  border: 0;
+  background-color: red;
+  width: 17rem;
+}
+.contact-container .form-container .contact-form .message-buttons .reset {
+  border: 1px solid white;
+  background-color: #4D4C4C;
+  width: 10rem;
 }
 
 .footer-container {

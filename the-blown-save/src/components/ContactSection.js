@@ -5,7 +5,7 @@ function ContactSection (props) {
         <div className='contact-container'>
             <div className='form-container'>
                 <h1 className='contact-title'>Contact Us</h1>
-                <form>
+                <form className='contact-form'>
                     <div className='name-email'>
                         <div className='title-field'>
                             <h2>Name</h2>
@@ -18,11 +18,11 @@ function ContactSection (props) {
                     </div>
                     <div className='title-field message'>
                         <h2>Message</h2>
-                        <input type="text"/>
+                        <textarea type="text"/>
                     </div>
                     <div className='message-buttons'>
-                        <button>Submit</button>
-                        <button>Reset</button>
+                        <button className='submit'>Send Message</button>
+                        <button className='reset'>Reset</button>
                     </div>
                 </form>
                 {/* <div className='social-media'>
