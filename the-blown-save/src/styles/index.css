@@ -239,6 +239,29 @@ table {
   background-color: #4D4C4C;
   height: 50rem;
 }
+.merch-container .title-section {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+}
+.merch-container .title-section h1 {
+  padding: 3rem;
+}
+.merch-container .carousel {
+  display: flex;
+  height: 100%;
+  background-color: lightgrey;
+  align-items: center;
+}
+.merch-container .carousel .item img {
+  width: 30rem;
+}
+.merch-container .carousel .item .lable {
+  background-color: #4D4C4C;
+  color: white;
+  height: 10rem;
+}
 
 .about-container {
   background-color: #4D4C4C;
