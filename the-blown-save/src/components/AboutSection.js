@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PlaceHolder from '../imgs/selfie.jpg'
 function AboutSection() {
     return(
         <div className='about-container'>
@@ -10,18 +10,18 @@ function AboutSection() {
                         <p className='left-content'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div className='right-section'>
-                        <div>
-                            <div>
-                                <h1>Name 1</h1>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                        <div className='content-group'>
+                            <div className='title-text'>
+                                <h1 className="right-title">Name 1</h1>
+                                <p className="right-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
                             </div>
-                            <img src="" alt=""/>
+                            <img src={PlaceHolder} alt="picture"/>
                         </div>
-                        <div>
-                            <img src="" alt=""/>
-                            <div>
-                                <h1>Name 1</h1>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                        <div className='content-group'>
+                            <img src={PlaceHolder} alt="picture"/>
+                            <div className='title-text' >
+                                <h1 className="right-title">Name 1</h1>
+                                <p className="right-text" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
                             </div>
                         </div>
                     </div>

@@ -243,7 +243,7 @@ table {
 .about-container {
   background-color: #4D4C4C;
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,7 +252,7 @@ table {
 .about-container .about-title {
   text-align: center;
   color: red;
-  font-size: 4rem;
+  font-size: 5rem;
   text-decoration: underline;
 }
 .about-container .about-content-container {
@@ -273,7 +273,7 @@ table {
 .about-container .about-content-container .left-section .left-title, .about-container .about-content-container .right-section .left-title {
   text-align: center;
   margin: 2rem;
-  font-size: 4.5rem;
+  font-size: 5rem;
   color: white;
   font-weight: bolder;
 }
@@ -282,6 +282,34 @@ table {
   padding: 1rem 2rem 2rem 2rem;
   line-height: 2.5rem;
   text-indent: 3rem;
+}
+.about-container .about-content-container .right-section {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about-container .about-content-container .right-section .content-group {
+  display: flex;
+  flex-direction: row;
+}
+.about-container .about-content-container .right-section .content-group img {
+  width: 15rem;
+  height: 16rem;
+}
+.about-container .about-content-container .right-section .content-group .title-text {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.about-container .about-content-container .right-section .content-group .title-text .right-title {
+  font-size: 4rem;
+  color: red;
+  font-weight: bold;
+}
+.about-container .about-content-container .right-section .content-group .title-text .right-text {
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 .footer-container {
