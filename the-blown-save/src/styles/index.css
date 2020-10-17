@@ -236,10 +236,12 @@ table {
 }
 
 .merch-container {
-  background-color: #4D4C4C;
-  height: 50rem;
+  background-color: white;
+  height: 85vh;
+  width: 100%;
 }
 .merch-container .title-section {
+  background-color: #4D4C4C;
   width: 100%;
   color: white;
   text-align: center;
@@ -250,17 +252,40 @@ table {
 }
 .merch-container .carousel {
   display: flex;
-  height: 100%;
+  flex-direction: row;
+  height: 70vh;
   background-color: lightgrey;
   align-items: center;
+  overflow-x: hidden;
 }
-.merch-container .carousel .item img {
-  width: 30rem;
+.merch-container .carousel .item-container {
+  transition: 0.5s;
 }
-.merch-container .carousel .item .lable {
+.merch-container .carousel .item-container .item {
+  margin-right: 8.5vw;
+}
+.merch-container .carousel .item-container .item:first-child {
+  margin-left: 8.5vw;
+}
+.merch-container .carousel .item-container .item img {
+  width: 25rem;
+}
+.merch-container .carousel .item-container .item .lable {
   background-color: #4D4C4C;
   color: white;
   height: 10rem;
+}
+.merch-container #goRight, .merch-container #goLeft {
+  position: relative;
+  width: 10rem;
+  top: -50%;
+}
+.merch-container #goLeft {
+  left: 0%;
+}
+.merch-container #goRight {
+  right: 0%;
+  float: right;
 }
 
 .about-container {
@@ -416,12 +441,13 @@ table {
 }
 
 .footer-container {
+  border-top: 1px solid white;
   align-items: center;
   background-color: #4D4C4C;
-  display: flex;
   flex-direction: row;
   height: 8vh;
   justify-content: flex-end;
+  margin: 0;
 }
 .footer-container img {
   vertical-align: center;

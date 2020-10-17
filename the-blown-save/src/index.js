@@ -6,7 +6,7 @@ import './styles/index.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App className='app' />
   </React.StrictMode>,
   document.getElementById('root')
 );

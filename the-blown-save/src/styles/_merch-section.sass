@@ -1,8 +1,10 @@
 .merch-container
-    background-color: $backgroundColor
-    height: 50rem
+    background-color: white
+    height: 85vh
+    width:100%
 
     .title-section
+        background-color: $backgroundColor
         width: 100%
         color: white
         text-align:  center
@@ -11,13 +13,33 @@
             padding: 3rem
     .carousel
         display: flex
-        height: 100%
+        flex-direction: row
+        height: 70vh
         background-color: lightgrey
         align-items: center
-        .item
-            img
-                width: 30rem
-            .lable
-                background-color: $backgroundColor
-                color: white
-                height: 10rem
+        overflow-x: hidden
+        .item-container
+            transition: 0.5s
+            .item
+                margin-right: 8.5vw
+                &:first-child
+                    margin-left: 8.5vw
+                img
+                    width: 25rem
+                .lable
+                    background-color: $backgroundColor
+                    color: white
+                    height: 10rem
+    %button-style
+        position: relative
+        width: 10rem
+        top: -50%
+        
+
+    #goLeft
+        @extend %button-style
+        left: 0%
+    #goRight
+        @extend %button-style
+        right: 0%
+        float: right
