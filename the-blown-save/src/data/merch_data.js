@@ -23,49 +23,50 @@ const merchData = [
         img: Hoodie_00,
         name: "Premium Pullover Hoodie",
         type: "Hoodies & Sweatshirts",
-        price: 44.99
+        price: 44.99,
+        link: 'https://teespring.com/blown-save-v2?tsmac=store&tsmic=the-blown-save&pid=227&cid=2661'
     },
     {
         img: Hoodie_01,
         name: "Unisex Zip Hoodie ",
         type: "Hoodies & Sweatshirts",
-        price: 45.99
+        price: 45.99,
+        link: "https://teespring.com/blown-save-v2?tsmac=store&tsmic=the-blown-save&pid=1027&cid=104073"
     },
     {
         img: Leggings_00,
         name: "Leggings",
         type: "Women's Athletic ",
-        price: 44.99
+        price: 44.99,
+        link: "https://teespring.com/blown-save-v2?tsmac=store&tsmic=the-blown-save&pid=641&cid=102637"
     },
     {
         img: Leggings_01,
         name: "Leggings",
         type: "Women's Athletic ",
-        price: 32.99
+        price: 32.99,
+        link: "https://teespring.com/the-blown-save-gear?tsmac=store&tsmic=the-blown-save&pid=641&cid=103696"
     },
     {
         img: Mask_00,
         name: "Cloth Face Mask",
         type: "Face Mask",
-        price: 9.99
-    },
-    {
-        img: Mask_01,
-        name: "Blown Save Neck Gaiter",
-        type: "Neck Gaiters",
-        price: 9.99
+        price: 9.99,
+        link: "https://teespring.com/new-the-blown-save-gear?tsmac=store&tsmic=the-blown-save&pid=1121&cid=104188"
     },
     {
         img: Mug_00,
         name: "Blown Save Coffee Mug",
         type: "Mug",
-        price: 12.99
+        price: 12.99,
+        link: "https://teespring.com/the-blown-save-grab-bag?tsmac=store&tsmic=the-blown-save&pid=658&cid=102908"
     },
     {
         img: Phone_case_00,
         name: "iPhone Case",
         type: "Phone Case",
-        price: 19.99
+        price: 19.99,
+        link: "https://teespring.com/the-blown-save-grab-bag?tsmac=store&tsmic=the-blown-save&pid=633&cid=102527"
     }
 ]
 

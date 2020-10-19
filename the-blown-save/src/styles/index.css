@@ -39,6 +39,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-container {
   height: 6vh;
   background-color: #4D4C4C;
@@ -150,7 +154,7 @@ table {
 }
 
 .podcast-container {
-  background-image: url("../imgs/Hero/hero_img_00.jpg");
+  background-image: url("../imgs/Hero/Hero_Img_00.png");
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -199,6 +203,9 @@ table {
 .podcast-container .player-container .player-inner .player-content .player {
   background-color: white;
   width: 100%;
+}
+.podcast-container .player-container .player-inner .player-content .player:focus {
+  outline: none;
 }
 .podcast-container .player-container .player-inner .player-content p {
   font-size: 1.75rem;
@@ -271,27 +278,46 @@ table {
   width: 25rem;
 }
 .merch-container .carousel .item-container .item .lable {
+  display: flex;
+  justify-content: space-around;
   background-color: #4D4C4C;
   color: white;
   height: 10rem;
+  align-items: center;
 }
-.merch-container #goRight, .merch-container #goLeft {
-  position: relative;
+.merch-container .carousel .item-container .item .lable div h1 {
+  padding-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.merch-container .carousel .item-container .item .lable div p {
+  color: #a1a1a1;
+}
+.merch-container .carousel .item-container .item .lable p {
+  font-size: 1rem;
+  color: #a1a1a1;
+}
+.merch-container .goRight, .merch-container .goLeft {
+  position: absolute;
   width: 10rem;
-  top: -50%;
+  top: 235%;
   border: none;
   background: none;
 }
-.merch-container #goRight:active, .merch-container #goLeft:active {
-  border: none;
+.merch-container .goRight:focus, .merch-container .goLeft:focus {
+  outline: none;
 }
-.merch-container #goRight img, .merch-container #goLeft img {
+.merch-container .goRight:active, .merch-container .goLeft:active {
+  opacity: 0.5;
+}
+.merch-container .goRight img, .merch-container .goLeft img {
   width: 3rem;
 }
-.merch-container #goLeft {
+.merch-container .goLeft {
   left: 0%;
 }
-.merch-container #goRight {
+.merch-container .goRight {
   right: 0%;
   float: right;
 }

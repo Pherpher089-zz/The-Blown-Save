@@ -12,9 +12,15 @@ function HeroSection() {
                 <h3>some subtext goes here</h3>
                 <div className="hero-buttons">
                     <button>Subscribe ></button>
-                    <img src={Instagram} alt='insta'/>
-                    <img src={Twitter} alt='Twitter'/>
-                    <img src={Facebook} alt='FB'/>
+                    <a href="https://www.instagram.com/theblownsavepodcast/?hl=en">
+                        <img src={Instagram} alt='insta'/>
+                    </a>
+                    <a href="https://twitter.com/blown_save">
+                        <img src={Twitter} alt='Twitter'/>
+                    </a>
+                    <a href="">
+                        <img src={Facebook} alt='FB'/>
+                    </a>
                 </div>
             </div>
         </div>

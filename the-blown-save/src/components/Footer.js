@@ -6,9 +6,15 @@ import Twitter from '../imgs/social_media/Twitter_2.png'
 function Footer() {
     return (
         <div className="footer-container">
-            <img src={Instagram} alt="Instagram"/>
-            <img src={Facebook} alt="Facebook"/>
-            <img src={Twitter} alt="Twitter"/>
+            <a href="https://www.instagram.com/theblownsavepodcast/?hl=en">
+                <img src={Instagram} alt="Instagram"/>
+            </a>
+            <a href="">
+                <img src={Facebook} alt="Facebook"/>
+            </a>
+            <a href="https://twitter.com/blown_save">
+                <img src={Twitter} alt="Twitter"/>
+            </a>
         </div>
     )
 }

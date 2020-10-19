@@ -8,11 +8,22 @@ function MerchSection() {
     const merch = merchData
     const [x, setX] = useState(0)
     let GoLeft =()=>{
-        setX(x+100)
+        if(x < 0){
+            setX(x+100)
+        } else {
+            setX(200 + (-100 * (merchData.length - 1)))
+        }
+        console.log(x)
     }
     let GoRight = ()=>{
+
+        if(x > 200 + (-100 * (merchData.length - 1))) {
+            setX(x-100)
+        } else {
+            setX(0)
+        }
         console.log(x)
-        setX(x-100)
+
     }
     return(
         <div className='merch-container'>
@@ -26,9 +37,8 @@ function MerchSection() {
                         </div>
                     ))}
             </div>
-            <button id='goLeft' onClick={GoLeft}> <img src={LeftArrow} alt="Left"/> </button>
-            
-            <button id='goRight' onClick={GoRight}> <img src={RightArrow} alt="right"/> </button>
+            <button className='goLeft' onClick={GoLeft}> <img src={LeftArrow} alt="Left"/> </button>
+            <button className='goRight' onClick={GoRight}> <img src={RightArrow} alt="right"/> </button>
         
         </div>
     )

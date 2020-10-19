@@ -20,6 +20,7 @@
         overflow-x: hidden
         .item-container
             transition: 0.5s
+        
             .item
                 margin-right: 8.5vw
                 &:first-child
@@ -27,26 +28,45 @@
                 img
                     width: 25rem
                 .lable
+                    display: flex
+                    justify-content: space-around
                     background-color: $backgroundColor
                     color: white
                     height: 10rem
+                    align-items: center
+                    div
+                        h1
+                            padding-bottom: 1rem
+                            color: white
+                            font-weight: bold
+                            font-size: 1.3rem
+                        p
+                            color: #a1a1a1
+                    p
+                        font-size: 1rem
+                        color: #a1a1a1
+                            
+                        
+                    
     %button-style
-        position: relative
+        position: absolute
         width: 10rem
-        top: -50%
+        top: 235%
         border: none
         background: none
         //height: 80%
+        &:focus
+            outline: none
         &:active
-            border: none
+            opacity: 0.5
         img
             width: 3rem
         
 
-    #goLeft
+    .goLeft
         @extend %button-style
         left: 0%
-    #goRight
+    .goRight
         @extend %button-style
         right: 0%
         float: right
