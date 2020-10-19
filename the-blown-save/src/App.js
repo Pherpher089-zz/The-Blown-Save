@@ -5,7 +5,7 @@ import Footer from './components/Footer.js';
 import HomePage from './components/HomePage.js';
 import AboutPage from './components/AboutPage.js'
 import ContactPage from './components/ContactPage.js'
-
+import Form from './Form.js'
 function App() {
   return (
     <Router>

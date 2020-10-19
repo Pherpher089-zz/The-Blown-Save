@@ -26,11 +26,10 @@ function MerchSection() {
                         </div>
                     ))}
             </div>
-            <button id='goLeft' onClick={GoLeft}>Left</button>
+            <button id='goLeft' onClick={GoLeft}> <img src={LeftArrow} alt="Left"/> </button>
             
-            <button id='goRight' onClick={GoRight}>Right</button>
-            {/* <img src={LeftArrow} alt="left" id='goLeft' onClick={GoLeft} />
-            <img src={RightArrow} alt="right" id='goRight' onClick={GoRight}/> */}
+            <button id='goRight' onClick={GoRight}> <img src={RightArrow} alt="right"/> </button>
+        
         </div>
     )
 }
