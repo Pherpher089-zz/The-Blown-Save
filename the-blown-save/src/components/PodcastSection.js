@@ -15,7 +15,6 @@ const icons = [{img: ApplePodcastIcon, link:"https://podcasts.apple.com/us/podca
 
 function PodcastSection(props) {
 
-    console.log(backgroundStyle)
     return (
         <div className='podcast-container'>
             <div className='player-container'>
