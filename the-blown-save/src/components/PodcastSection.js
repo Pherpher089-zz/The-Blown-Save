@@ -1,10 +1,4 @@
 import React, {useState} from 'react';
-import Hero_00 from '../imgs/Hero/Hero_Img_00.jpg'
-import Hero_01 from '../imgs/Hero/Hero_Img_01.png'
-import Hero_02 from '../imgs/Hero/Hero_Img_02.png'
-import Hero_03 from '../imgs/Hero/Hero_Img_03.png'
-import Hero_04 from '../imgs/Hero/Hero_Img_04.png'
-import Hero_05 from '../imgs/Hero/Hero_Img_05.png'
 
 //Podcast site icons
 import ApplePodcastIcon from '../imgs/Podcast_Icons/podcast_icon_512x512.png'
@@ -17,14 +11,10 @@ import StitcherIcon from '../imgs/Podcast_Icons/stitcher_icon_512x512.png';
 import CurrentEpisode from '../audio/tbsp_ep32.mp3'
 
 //Placing icons in array
-const icons = [{img:ApplePodcastIcon, link:"https://podcasts.apple.com/us/podcast/the-blown-save-podcast/id1502906135"},{ img: OvercastIcon, link:'https://overcast.fm/itunes1502906135/the-blown-save-podcast'}, {img: SpotifyIcon, link: 'https://open.spotify.com/show/3BUZ3DaMCPxvDAFje32Zcj'}]
+const icons = [{img: ApplePodcastIcon, link:"https://podcasts.apple.com/us/podcast/the-blown-save-podcast/id1502906135"},{ img: OvercastIcon, link:'https://overcast.fm/itunes1502906135/the-blown-save-podcast'}, {img: SpotifyIcon, link: 'https://open.spotify.com/show/3BUZ3DaMCPxvDAFje32Zcj'}]
 
 function PodcastSection(props) {
-    const heroArr = [Hero_00, Hero_01, Hero_02, Hero_03, Hero_04, Hero_05]
 
-    const backgroundStyle = {
-        backgroundImage: `${heroArr[Math.random(0,heroArr.length - 1)]}` 
-    }
     console.log(backgroundStyle)
     return (
         <div className='podcast-container'>
