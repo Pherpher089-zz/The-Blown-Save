@@ -1,8 +1,8 @@
 import React from 'react';
 import Logo from '../imgs/Logo_1500x2100.png';
-import Instagram from '../imgs/social_media/Instagram_1.png';
-import Facebook from '../imgs/social_media/Facebook_1.png';
-import Twitter from '../imgs/social_media/Twitter_1.png'
+import Instagram from '../imgs/social_media/Instagram_2.png';
+import Facebook from '../imgs/social_media/Facebook_2.png';
+import Twitter from '../imgs/social_media/Twitter_2.png'
 function HeroSection() {
     return (
         <div className="hero-container">
