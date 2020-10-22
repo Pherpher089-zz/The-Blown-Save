@@ -19,7 +19,7 @@
             background-color: white
             border-radius: 2.4rem
             display: flex
-            height: 22rem
+            min-height: 22rem
             width: 77rem
             .player-content
                 align-items: flex-start
@@ -50,26 +50,29 @@
                     padding-left: 3rem
     .podcast-icons
         display: flex
+        flex-wrap: wrap
         flex-direction: row
         justify-content: space-around
         width: 55%
+        height: auto
         .podcast-icon
+            margin: 2rem
             align-content: center
-            border: 3px solid #ffffff8e
+            border: 3px solid white
             display: flex
-            height: 15rem
+            height: 10rem
             width: 10rem
             &:hover
-                border: 3px solid white
+                border: 3px solid $accentColor
             &:active
-                border: 3px solid #ffffffbe
+                border: 3px solid $accentColor
 
 
             img
                 padding: 2rem
                 height: 6rem
-                opacity: .7
+                filter: grayscale(100%) brightness(500%)
                 &:hover
-                    opacity: 1
+                    filter: grayscale(0%) brightness(100%)
                 &:active
                     opacity: .8
