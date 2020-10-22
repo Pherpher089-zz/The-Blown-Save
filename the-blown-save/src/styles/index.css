@@ -154,7 +154,7 @@ a {
 }
 
 .podcast-container {
-  background-image: url("../imgs/Hero/Hero_Img_00.png");
+  background-image: url("../imgs/Hero/Hero_Img_00.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -345,6 +345,7 @@ a {
   height: 80%;
 }
 .about-container .about-content-container .left-section, .about-container .about-content-container .right-section {
+  background-color: #4d4c4cbb;
   border: 1px solid grey;
   border-radius: 2rem;
   color: white;
