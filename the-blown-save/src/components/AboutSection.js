@@ -1,5 +1,6 @@
 import React from 'react';
 import PlaceHolder from '../imgs/selfie.jpg'
+import BretPic from  '../imgs/bret_02.jpg'
 import BackgroundImg from '../imgs/Hero/About_Background.jpg'
 
 const background_style = {
@@ -22,7 +23,7 @@ function AboutSection() {
                             <h1 className="right-title"> Brent Sanchez</h1>
                             <p className="right-text">39 year old Marine Corps Combat Veteran, Father and husband. After high school I joined the Marine Corps and traveled the world. Visited many countries, some for pleasure some forced. Never losing touch with how my favorite teams were doing no matter where in the world I would lay my head. Sometimes being in the middle of nowhere, but being able to catch some game, any game, on the A.M. frequencies was like a taste of home even so far away. My love of sports never wavered, and I pass that along to all my kids and watch their love of different aspects of the games become their favorite. Speaking in front of a large crowd was never an issue for me and it would be an easy transition to speak into a mic and enjoy a conversation with a close friend.</p>
                         </div>
-                        <img src={PlaceHolder} alt="picture" />
+                        <img src={BretPic} alt="picture" />
                     </div>
                     <div className='content-group'>
                         <img src={PlaceHolder} alt="picture" />

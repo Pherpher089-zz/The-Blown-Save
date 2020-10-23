@@ -405,6 +405,7 @@ a {
 .about-container .about-content-container .right-section .content-group {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .about-container .about-content-container .right-section .content-group img {
   width: 15rem;
@@ -416,6 +417,7 @@ a {
   padding: 1rem;
 }
 .about-container .about-content-container .right-section .content-group .title-text .right-title {
+  margin-bottom: 1rem;
   font-size: 4rem;
   color: red;
   font-weight: bold;
