@@ -1,6 +1,6 @@
 .merch-container
     background-color: white
-    height: 85vh
+    height: 78vh
     width:100%
 
     .title-section
@@ -14,7 +14,7 @@
     .carousel
         display: flex
         flex-direction: row
-        height: 70vh
+        height: 55vh
         background-color: lightgrey
         align-items: center
         overflow-x: hidden
@@ -45,13 +45,25 @@
                     p
                         font-size: 1rem
                         color: #a1a1a1
-                            
-                        
-                    
-    %button-style
+    .bottom-banner
+        height: 7rem
+        background-color: $backgroundColor
+        h1
+            padding-top: 1.5rem
+            text-align: center
+            color: white
+            font-size: 3rem
+            a
+                text-decoration: underline
+                font-style: italic
+                color: white
+                &:hover
+                    color:$accentColor
+
+    %arrow-button-style
         position: absolute
         width: 10rem
-        top: 235%
+        top: 207%
         border: none
         background: none
         //height: 80%
@@ -64,9 +76,9 @@
         
 
     .goLeft
-        @extend %button-style
+        @extend %arrow-button-style
         left: 0%
     .goRight
-        @extend %button-style
+        @extend %arrow-button-style
         right: 0%
         float: right

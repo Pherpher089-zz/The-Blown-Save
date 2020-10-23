@@ -39,6 +39,17 @@ table {
   border-spacing: 0;
 }
 
+.footer-container img, .hero-container .hero-content .hero-buttons img {
+  height: 4.5rem;
+  filter: grayscale(100%) brightness(500%);
+}
+.footer-container img:hover, .hero-container .hero-content .hero-buttons img:hover {
+  filter: grayscale(0%) brightness(100%);
+}
+.footer-container img:active, .hero-container .hero-content .hero-buttons img:active {
+  opacity: 0.8;
+}
+
 a {
   text-decoration: none;
 }
@@ -73,11 +84,13 @@ a {
   color: white;
 }
 .nav-container .nav-buttons a:hover {
+  border: 1px solid red;
   color: #4D4C4C;
-  background-color: white;
+  background-color: red;
+  border-radius: 4px;
 }
 .nav-container .nav-buttons a:active {
-  background-color: grey;
+  background-color: #ff00008f;
 }
 
 .hero-container {
@@ -85,7 +98,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 60vh;
+  height: 70vh;
   background-image: linear-gradient(#4D4C4C, black);
 }
 .hero-container .hero-img {
@@ -143,23 +156,13 @@ a {
   background-color: #a00000;
   border: 2px solid #a00000;
 }
-.hero-container .hero-content .hero-buttons img {
-  height: 4.5rem;
-  filter: grayscale(100%) brightness(500%);
-}
-.hero-container .hero-content .hero-buttons img:hover {
-  filter: grayscale(0%) brightness(100%);
-}
-.hero-container .hero-content .hero-buttons img:active {
-  opacity: 0.8;
-}
 
 .podcast-container {
   background-image: url("../imgs/Hero/Hero_Img_00.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 70rem;
+  min-height: 90vh;
   align-items: center;
 }
 .podcast-container .player-container {
@@ -168,16 +171,20 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30rem;
-  width: 83rem;
+  height: 35vh;
+  width: 53vw;
 }
 .podcast-container .player-container .player-inner {
+  background-image: url("../imgs/name_logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   align-items: center;
   background-color: white;
   border-radius: 2.4rem;
   display: flex;
   min-height: 22rem;
-  width: 77rem;
+  width: 50vw;
 }
 .podcast-container .player-container .player-inner .player-content {
   align-items: flex-start;
@@ -189,6 +196,7 @@ a {
 }
 .podcast-container .player-container .player-inner .player-content .title-date {
   padding-left: 3rem;
+  margin-bottom: 2rem;
   align-items: center;
   width: 90%;
   display: flex;
@@ -202,15 +210,16 @@ a {
   font-size: 1.2rem;
 }
 .podcast-container .player-container .player-inner .player-content .player {
-  background-color: white;
+  background-color: none;
   width: 100%;
 }
 .podcast-container .player-container .player-inner .player-content .player:focus {
   outline: none;
 }
-.podcast-container .player-container .player-inner .player-content p {
+.podcast-container .player-container .player-inner .player-content .description {
   font-size: 1.75rem;
   padding-left: 3rem;
+  margin-top: 1.5rem;
 }
 .podcast-container .podcast-icons {
   display: flex;
@@ -248,7 +257,7 @@ a {
 
 .merch-container {
   background-color: white;
-  height: 85vh;
+  height: 78vh;
   width: 100%;
 }
 .merch-container .title-section {
@@ -264,7 +273,7 @@ a {
 .merch-container .carousel {
   display: flex;
   flex-direction: row;
-  height: 70vh;
+  height: 55vh;
   background-color: lightgrey;
   align-items: center;
   overflow-x: hidden;
@@ -302,10 +311,28 @@ a {
   font-size: 1rem;
   color: #a1a1a1;
 }
+.merch-container .bottom-banner {
+  height: 7rem;
+  background-color: #4D4C4C;
+}
+.merch-container .bottom-banner h1 {
+  padding-top: 1.5rem;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+.merch-container .bottom-banner h1 a {
+  text-decoration: underline;
+  font-style: italic;
+  color: white;
+}
+.merch-container .bottom-banner h1 a:hover {
+  color: red;
+}
 .merch-container .goRight, .merch-container .goLeft {
   position: absolute;
   width: 10rem;
-  top: 235%;
+  top: 207%;
   border: none;
   background: none;
 }
@@ -491,16 +518,7 @@ a {
   margin: 0;
 }
 .footer-container img {
-  vertical-align: center;
-  height: 5rem;
-  margin-right: 1rem;
-  opacity: 50%;
-}
-.footer-container img:hover {
-  opacity: 100%;
-}
-.footer-container img:active {
-  opacity: 70%;
+  margin-right: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */

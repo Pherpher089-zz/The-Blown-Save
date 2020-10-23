@@ -3,7 +3,7 @@
     flex-direction: row
     align-items: center
     justify-content: space-around
-    height: 60vh
+    height: 70vh
     background-image: linear-gradient($backgroundColor, black)
     .hero-img
         height: 50rem
@@ -44,10 +44,6 @@
                 &:active
                     background-color: $accentColorActive
                     border: 2px solid $accentColorActive
-            img
-                height: 4.5rem
-                filter: grayscale(100%) brightness(500%)
-                &:hover
-                    filter: grayscale(0%) brightness(100%)
-                &:active
-                    opacity: .8
+            @extend %SocialMediaButtons
+
+                

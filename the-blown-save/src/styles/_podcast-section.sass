@@ -3,7 +3,7 @@
     display: flex
     flex-direction: column
     justify-content: space-around
-    height: 70rem
+    min-height: 90vh
     align-items: center
     .player-container
         background-color: $backgroundColor
@@ -11,16 +11,19 @@
         display: flex
         align-items: center
         justify-content: center
-        height: 30rem
-
-        width: 83rem
+        height: 35vh
+        width: 53vw
         .player-inner
+            background-image: url('../imgs/name_logo.png')
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
             align-items: center
             background-color: white
             border-radius: 2.4rem
             display: flex
             min-height: 22rem
-            width: 77rem
+            width: 50vw
             .player-content
                 align-items: flex-start
                 display: flex
@@ -30,6 +33,7 @@
                 padding: 0 3rem 0 3rem
                 .title-date
                     padding-left: 3rem
+                    margin-bottom: 2rem
                     align-items: center
                     width: 90%
                     display: flex
@@ -41,13 +45,14 @@
                     .date
                         font-size: 1.2rem
                 .player
-                    background-color: white
+                    background-color: none
                     width: 100%
                     &:focus
                         outline: none
-                p
+                .description
                     font-size: 1.75rem
                     padding-left: 3rem
+                    margin-top: 1.5rem
     .podcast-icons
         display: flex
         flex-wrap: wrap

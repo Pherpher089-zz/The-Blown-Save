@@ -43,7 +43,7 @@ function PodcastSection(props) {
                             <p className="date">October 9th, 2020</p>
                         </div>
                         <audio className="player" controls src={CurrentEpisode} />
-                        <p> Here is an example of what a description will look like. I think it's going to need at least a few sentences. </p>
+                        <p className='description'> Here is an example of what a description will look like. I think it's going to need at least a few sentences. </p>
                     </div>
                 </div>
             </div>
