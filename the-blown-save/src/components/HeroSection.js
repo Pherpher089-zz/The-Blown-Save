@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../imgs/Logo_1500x2100.png';
 import Instagram from '../imgs/social_media/Instagram_2.png';
-import Facebook from '../imgs/social_media/Facebook_2.png';
+import YouTube from '../imgs/social_media/YouTube_2.png';
 import Twitter from '../imgs/social_media/Twitter_2.png'
 function HeroSection() {
     return (
@@ -18,8 +18,8 @@ function HeroSection() {
                     <a href="https://twitter.com/blown_save">
                         <img src={Twitter} alt='Twitter'/>
                     </a>
-                    <a href="">
-                        <img src={Facebook} alt='FB'/>
+                    <a href="youtube.com/channel/UCXhaOiubzakuGc4YGj_0XSw">
+                        <img src={YouTube} alt='YouTube'/>
                     </a>
                 </div>
             </div>

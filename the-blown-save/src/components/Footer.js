@@ -1,6 +1,6 @@
 import React from "react";
 import Instagram from '../imgs/social_media/Instagram_2.png'
-import Facebook from '../imgs/social_media/Facebook_2.png'
+import YouTube from '../imgs/social_media/YouTube_2.png'
 import Twitter from '../imgs/social_media/Twitter_2.png'
 
 function Footer() {
@@ -9,8 +9,8 @@ function Footer() {
             <a href="https://www.instagram.com/theblownsavepodcast/?hl=en">
                 <img src={Instagram} alt="Instagram"/>
             </a>
-            <a href="">
-                <img src={Facebook} alt="Facebook"/>
+            <a href="youtube.com/channel/UCXhaOiubzakuGc4YGj_0XSw">
+                <img src={YouTube} alt="YouTube"/>
             </a>
             <a href="https://twitter.com/blown_save">
                 <img src={Twitter} alt="Twitter"/>

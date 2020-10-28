@@ -187,10 +187,10 @@ a {
   width: 50vw;
 }
 .podcast-container .player-container .player-inner .player-content {
+  width: 100%;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  height: 60%;
   justify-content: space-between;
   padding: 0 3rem 0 3rem;
 }
@@ -207,6 +207,7 @@ a {
   font-size: 2.5rem;
 }
 .podcast-container .player-container .player-inner .player-content .title-date .date {
+  width: 7vw;
   font-size: 1.2rem;
 }
 .podcast-container .player-container .player-inner .player-content .player {
