@@ -6,14 +6,14 @@ import Twitter from '../imgs/social_media/Twitter_2.png'
 function Footer() {
     return (
         <div className="footer-container">
-            <a href="https://www.instagram.com/theblownsavepodcast/?hl=en">
-                <img src={Instagram} alt="Instagram"/>
+            <a target="_blank" href="https://www.instagram.com/theblownsavepodcast/?hl=en">
+                <img src={Instagram} alt="Instagram" />
             </a>
-            <a href="youtube.com/channel/UCXhaOiubzakuGc4YGj_0XSw">
-                <img src={YouTube} alt="YouTube"/>
+            <a target="_blank" href="youtube.com/channel/UCXhaOiubzakuGc4YGj_0XSw">
+                <img src={YouTube} alt="YouTube" />
             </a>
-            <a href="https://twitter.com/blown_save">
-                <img src={Twitter} alt="Twitter"/>
+            <a target="_blank" href="https://twitter.com/blown_save">
+                <img src={Twitter} alt="Twitter" />
             </a>
         </div>
     )

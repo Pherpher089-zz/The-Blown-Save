@@ -36,7 +36,7 @@ const icons = [
     { img: SpreakerIcon, link: 'https://www.spreaker.com/show/the-blown-save-podcast' }
 ]
 
-const backgroundImgs = [Hero_Img_00, Hero_Img_01, Hero_Img_02, , Hero_Img_04, Hero_Img_05, Hero_Img_06]
+const backgroundImgs = [Hero_Img_00, Hero_Img_01, Hero_Img_02, Hero_Img_04, Hero_Img_05, Hero_Img_06]
 
 const backgroundStyle = {
     "backgroundImage": `url(${backgroundImgs[Math.floor(Math.random() * 6)]})`
@@ -53,7 +53,7 @@ function PodcastSection(props) {
             <div className='podcast-icons'>
                 {icons.map(icon => {
                     return (
-                        <a href={icon.link}>
+                        <a target="_blank" href={icon.link}>
                             <div className="podcast-icon"> <img src={icon.img} /> </div>
                         </a>
                     )
