@@ -158,7 +158,6 @@ a {
 }
 
 .podcast-container {
-  background-image: url("../imgs/Hero/Hero_Img_00.png");
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -355,7 +354,6 @@ a {
 }
 
 .about-container {
-  background-color: #4D4C4C;
   width: 100%;
   height: 85.9vh;
   display: flex;

@@ -13,6 +13,14 @@ import PodcastAddictIcon from '../imgs/Podcast_Icons/podcastAddict_icon_512.png'
 import PodchaserIcon from '../imgs/Podcast_Icons/podchaser_icon_512.png'
 import SpreakerIcon from '../imgs/Podcast_Icons/spreaker_icon_512.png'
 
+//Back Ground imgs
+import Hero_Img_00 from '../imgs/Hero/Hero_Img_00.png';
+import Hero_Img_01 from '../imgs/Hero/Hero_Img_01.png';
+import Hero_Img_02 from '../imgs/Hero/Hero_Img_02.png';
+import Hero_Img_03 from '../imgs/Hero/Hero_Img_03.png';
+import Hero_Img_04 from '../imgs/Hero/Hero_Img_04.png';
+import Hero_Img_05 from '../imgs/Hero/Hero_Img_05.png';
+import Hero_Img_06 from '../imgs/Hero/Hero_Img_06.png';
 
 // The current podcast audio section
 const icons = [
@@ -28,10 +36,15 @@ const icons = [
     { img: SpreakerIcon, link: 'https://www.spreaker.com/show/the-blown-save-podcast' }
 ]
 
-function PodcastSection(props) {
+const backgroundImgs = [Hero_Img_00, Hero_Img_01, Hero_Img_02, Hero_Img_03, Hero_Img_04, Hero_Img_05, Hero_Img_06]
 
+const backgroundStyle = {
+    "backgroundImage": `url(${backgroundImgs[Math.floor(Math.random() * 7)]})`
+}
+
+function PodcastSection(props) {
     return (
-        <div className='podcast-container'>
+        <div className='podcast-container' style={backgroundStyle}>
             <div className='player-container'>
                 <div className='player-inner'>
                     <Podcast />
