@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import BackGround from '../imgs/contact_background_redLaces.png'
 
-function ContactSection (props) {
+function ContactSection(props) {
     const [email, setEmail] = useState(
         {
             name: '',
@@ -10,20 +10,20 @@ function ContactSection (props) {
         }
     )
 
-    const sendToEmail = "christutor089@gmail.com"
+    const sendToEmail = "theblownsavepodcast@gmail.com"
 
     const handleInput = e => {
-        setEmail({...email, [e.target.name]: e.target.value})
+        setEmail({ ...email, [e.target.name]: e.target.value })
     }
 
-    const reset = (e)=>{
+    const reset = (e) => {
         e.preventDefault()
-        setEmail({name:'', email: '', message:''});
+        setEmail({ name: '', email: '', message: '' });
     }
 
     const handleSubmit = (e) => {
-        const templateId='template_PVGUAzVD'
-        sendFeedback(templateId, {message_html: email.message, from_name:email.name, from_email:email.email, reply_to: sendToEmail})
+        const templateId = 'template_mayr66f'
+        sendFeedback(templateId, { message_html: email.message, from_name: email.name, from_email: email.email, reply_to: sendToEmail })
     }
 
     const sendFeedback = (templateId, variables) => {
@@ -34,7 +34,7 @@ function ContactSection (props) {
         }).catch(err => console.error('oh well, you failed. Here are some thoughts on the error that occurred:', err))
     }
 
-    return(
+    return (
         <div className='contact-container'>
             <div className='form-container'>
                 <h1 className='contact-title'>Contact Us</h1>
@@ -42,23 +42,23 @@ function ContactSection (props) {
                     <div className='name-email'>
                         <div className='title-field'>
                             <h2>Name</h2>
-                            <input type="text" name='name' placeholder='Name' value={email.name} onChange={handleInput}/>
+                            <input type="text" name='name' placeholder='Name' value={email.name} onChange={handleInput} />
                         </div>
                         <div className='title-field'>
                             <h2>Email</h2>
-                            <input type="text" name='email' placeholder='Email' value={email.email} onChange={handleInput}/>
+                            <input type="text" name='email' placeholder='Email' value={email.email} onChange={handleInput} />
                         </div>
                     </div>
                     <div className='title-field message' >
                         <h2>Message</h2>
-                        <textarea type="text" name='message' placeholder="message..." value={email.message} onChange={handleInput}/>
+                        <textarea type="text" name='message' placeholder="message..." value={email.message} onChange={handleInput} />
                     </div>
                     <div className='message-buttons'>
                         <button className='submit' onClick={handleSubmit}>Send Message</button>
                         <button className='reset' onClick={reset}>Reset</button>
                     </div>
                 </form>
-            </div>            
+            </div>
         </div>
     )
 }
