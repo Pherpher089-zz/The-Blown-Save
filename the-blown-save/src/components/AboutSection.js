@@ -1,6 +1,7 @@
 import React from 'react';
 import PlaceHolder from '../imgs/selfie.jpg'
-import BretPic from  '../imgs/bret_02.jpg'
+import BretPic from '../imgs/bret_02.jpg'
+import ArtiePic from '../imgs/artie_00.jpg'
 import BackgroundImg from '../imgs/Hero/About_Background.jpg'
 
 const background_style = {
@@ -26,7 +27,7 @@ function AboutSection() {
                         <img src={BretPic} alt="picture" />
                     </div>
                     <div className='content-group'>
-                        <img src={PlaceHolder} alt="picture" />
+                        <img src={ArtiePic} alt="picture" />
                         <div className='title-text' >
                             <h1 className="right-title bottom">Artie Cassas</h1>
                             <p className="right-text bottom" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>

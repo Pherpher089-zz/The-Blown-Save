@@ -18,7 +18,7 @@ function HeroSection() {
                     <a target="_blank" href="https://twitter.com/blown_save">
                         <img src={Twitter} alt='Twitter' />
                     </a>
-                    <a target="_blank" href="youtube.com/channel/UCXhaOiubzakuGc4YGj_0XSw">
+                    <a target="_blank" href="https://www.youtube.com/channel/UCXhaOiubzakuGc4YGj_0XSw/featured?view_as=subscriber">
                         <img src={YouTube} alt='YouTube' />
                     </a>
                 </div>

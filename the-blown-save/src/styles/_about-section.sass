@@ -1,7 +1,7 @@
 .about-container
     //background-color: $backgroundColor
     width: 100%
-    height: $viewHeight
+    min-height: $viewHeight
     display: flex
     flex-direction: column
     align-items: center
@@ -14,9 +14,10 @@
     .about-content-container
         display: flex
         justify-content: space-around
+        flex-direction: row
         margin: 3rem 1rem 1rem 1rem
         width: 90%
-        height: 80%
+        min-height: 80%
         .left-section, .right-section
             background-color: $backgroundColorAlpha
             border: 1px solid grey
@@ -46,7 +47,7 @@
                 flex-direction: row
                 align-items: center
                 img 
-                    width: 15rem
+                    //width: 15rem
                     height: 16rem
                 .title-text
                     display: flex

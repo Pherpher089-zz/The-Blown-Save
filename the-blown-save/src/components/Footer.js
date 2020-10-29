@@ -9,7 +9,7 @@ function Footer() {
             <a target="_blank" href="https://www.instagram.com/theblownsavepodcast/?hl=en">
                 <img src={Instagram} alt="Instagram" />
             </a>
-            <a target="_blank" href="youtube.com/channel/UCXhaOiubzakuGc4YGj_0XSw">
+            <a target="_blank" href="https://www.youtube.com/channel/UCXhaOiubzakuGc4YGj_0XSw/featured?view_as=subscriber">
                 <img src={YouTube} alt="YouTube" />
             </a>
             <a target="_blank" href="https://twitter.com/blown_save">

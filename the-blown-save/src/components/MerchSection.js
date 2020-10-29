@@ -7,12 +7,6 @@ import RightArrow from '../imgs/right_arrow.png'
 function MerchSection() {
     const merch = merchData
     const [x, setX] = useState(0)
-    //number of seconds before the carousel starts cycling it's self again.
-    const noUserInputInterval = 5;
-    /*This will be set to TRUE when the user has manually cycled the carousel to prevent it from moving when the user is actively cycling through merch. It will be set to false on a timer*/
-    const [userCycle, setUserCycle] = useState(false)
-    let counter = 0;
-
 
     let GoLeft = () => {
         if (x < 0) {
@@ -20,7 +14,6 @@ function MerchSection() {
         } else {
             setX(200 + (-100 * (merchData.length - 1)))
         }
-        setUserCycle(true)
     }
     let GoRight = () => {
         if (x > 200 + (-100 * (merchData.length - 1))) {
@@ -28,8 +21,16 @@ function MerchSection() {
         } else {
             setX(0)
         }
-        setUserCycle(true)
     }
+
+    useEffect(() => {
+        // const interval = setInterval(() => {
+        //     console.log('This will run every second!');
+        //     GoRight()
+        // }, 1000);
+        // //return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className='merch-container'>
             <div className='title-section'>
@@ -37,7 +38,7 @@ function MerchSection() {
             </div>
             <div className="carousel">
                 {merch.map((item, index) => (
-                    <div className='item-container' style={{ transform: `translateX(${x}%)` }}>
+                    <div className='item-container' style={{ transform: `translateX(${x}%)`/*if we need to adjust transition time, this is where it goes*/ }}>
                         <MerchItem item={item} />
                     </div>
                 ))}
