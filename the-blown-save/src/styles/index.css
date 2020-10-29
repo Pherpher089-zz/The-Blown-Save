@@ -239,6 +239,7 @@ a {
 }
 .podcast-container .podcast-icons .podcast-icon:hover {
   border: 3px solid red;
+  background-color: #ffffff7a;
 }
 .podcast-container .podcast-icons .podcast-icon:active {
   border: 3px solid red;
