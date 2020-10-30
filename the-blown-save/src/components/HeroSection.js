@@ -9,9 +9,11 @@ function HeroSection() {
             <img className='hero-img' src={Logo} alt="The Blown Save" />
             <div className='hero-content'>
                 <h1>New Episodes Weekly</h1>
-                <h3>some subtext goes here</h3>
+                <h3>for sports fans, by sports fans</h3>
                 <div className="hero-buttons">
-                    <button>Subscribe ></button>
+                    <a href="https://www.spreaker.com/show/the-blown-save-podcast" target='blank'>
+                        <button>Subscribe ></button>
+                    </a>
                     <a target="_blank" href="https://www.instagram.com/theblownsavepodcast/?hl=en">
                         <img src={Instagram} alt='insta' />
                     </a>

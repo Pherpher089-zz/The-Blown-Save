@@ -1,6 +1,6 @@
 .about-container
     //background-color: $backgroundColor
-    width: 100%
+    //width: 100vw
     min-height: $viewHeight
     display: flex
     flex-direction: column
@@ -8,24 +8,32 @@
     justify-content: center
     .about-title
         text-align: center
+        margin-top: 3rem
+        width: 30vw
         color:  $accentColor
+        background-color: $backgroundColorAlpha
+        padding: 2rem
+        padding-bottom: 4rem
         font-size: 5rem
         text-decoration: underline
+        border: 1px solid grey
+        border-radius: .5rem
     .about-content-container
         display: flex
-        justify-content: space-around
-        flex-direction: row
-        margin: 3rem 1rem 1rem 1rem
-        width: 90%
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        //margin: 3rem 1rem 1rem 1rem
+        width: 100%
         min-height: 80%
         .left-section, .right-section
             background-color: $backgroundColorAlpha
             border: 1px solid grey
-            border-radius: 2rem
+            border-radius: .5rem
             color: white
             padding: 1rem
-            width: 50vw
-            margin: 1rem
+            width: 80vw
+            margin: 2rem
             .left-title
                 text-align: center
                 margin: 2rem
@@ -46,9 +54,23 @@
                 display: flex
                 flex-direction: row
                 align-items: center
-                img 
-                    //width: 15rem
-                    height: 16rem
+                .img-and-links
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    img 
+                        //width: 15rem
+                        height: 16rem
+                    .social-media-container
+                        display: flex
+                        flex-direction: row
+                        @extend %SocialMediaButtons
+                        img
+                            width: 5rem
+                            height: 5rem
+                            margin: 1rem
+                            
+
                 .title-text
                     display: flex
                     flex-direction: column

@@ -107,7 +107,7 @@ function Podcast() {
                     <p className="date">{currentEpisode.date}</p>
                 </div>
                 <audio className="player" controls src={currentEpisode.url} />
-                <p className='description'>Gadda Figure This out</p>
+                {/* <p className='description'>Gadda Figure This out</p> */}
             </div>
         )
     }

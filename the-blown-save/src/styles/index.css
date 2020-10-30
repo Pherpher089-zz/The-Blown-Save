@@ -39,14 +39,14 @@ table {
   border-spacing: 0;
 }
 
-.footer-container img, .hero-container .hero-content .hero-buttons img {
+.footer-container img, .about-container .about-content-container .right-section .content-group .img-and-links .social-media-container img, .hero-container .hero-content .hero-buttons img {
   height: 4.5rem;
   filter: grayscale(100%) brightness(500%);
 }
-.footer-container img:hover, .hero-container .hero-content .hero-buttons img:hover {
+.footer-container img:hover, .about-container .about-content-container .right-section .content-group .img-and-links .social-media-container img:hover, .hero-container .hero-content .hero-buttons img:hover {
   filter: grayscale(0%) brightness(100%);
 }
-.footer-container img:active, .hero-container .hero-content .hero-buttons img:active {
+.footer-container img:active, .about-container .about-content-container .right-section .content-group .img-and-links .social-media-container img:active, .hero-container .hero-content .hero-buttons img:active {
   opacity: 0.8;
 }
 
@@ -137,6 +137,7 @@ a {
   justify-content: space-between;
 }
 .hero-container .hero-content .hero-buttons button {
+  margin-top: 0.6rem;
   color: red;
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid red;
@@ -398,8 +399,7 @@ a {
 }
 
 .about-container {
-  width: 100%;
-  min-height: 85.9vh;
+  min-height: 85.8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -407,26 +407,33 @@ a {
 }
 .about-container .about-title {
   text-align: center;
+  margin-top: 3rem;
+  width: 30vw;
   color: red;
+  background-color: #4d4c4cbb;
+  padding: 2rem;
+  padding-bottom: 4rem;
   font-size: 5rem;
   text-decoration: underline;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
 }
 .about-container .about-content-container {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  margin: 3rem 1rem 1rem 1rem;
-  width: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   min-height: 80%;
 }
 .about-container .about-content-container .left-section, .about-container .about-content-container .right-section {
   background-color: #4d4c4cbb;
   border: 1px solid grey;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   color: white;
   padding: 1rem;
-  width: 50vw;
-  margin: 1rem;
+  width: 80vw;
+  margin: 2rem;
 }
 .about-container .about-content-container .left-section .left-title, .about-container .about-content-container .right-section .left-title {
   text-align: center;
@@ -451,8 +458,22 @@ a {
   flex-direction: row;
   align-items: center;
 }
-.about-container .about-content-container .right-section .content-group img {
+.about-container .about-content-container .right-section .content-group .img-and-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-container .about-content-container .right-section .content-group .img-and-links img {
   height: 16rem;
+}
+.about-container .about-content-container .right-section .content-group .img-and-links .social-media-container {
+  display: flex;
+  flex-direction: row;
+}
+.about-container .about-content-container .right-section .content-group .img-and-links .social-media-container img {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
 }
 .about-container .about-content-container .right-section .content-group .title-text {
   display: flex;
@@ -474,7 +495,7 @@ a {
 }
 
 .contact-container {
-  height: 85.9vh;
+  height: 85.8vh;
   background-image: url("../imgs/contact_background_redLaces.png");
   background-size: cover;
   display: flex;
@@ -533,6 +554,7 @@ a {
   background-color: #4D4C4C;
   border: 1px solid white;
   border-radius: 0.5rem;
+  padding-left: 1rem;
 }
 .contact-container .form-container .contact-form .message-buttons button {
   border-radius: 1rem;
