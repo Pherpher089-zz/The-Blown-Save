@@ -9,7 +9,7 @@ function LiveStream() {
                 className='live-stream'
                 platform="youtube"
                 youtubeApiKey='AIzaSyDxC4SstM4akaTjwYrrAe7pPv9VDfxDrpQ'
-                youtubeChannelId="UCXhaOiubzakuGc4YGj_0XSw"
+                youtubeChannelId="UCOxqgCwgOqC2lMqC5PYz_Dg"
                 offlineComponent={<OfflineComponent />}
             />
         </div>
