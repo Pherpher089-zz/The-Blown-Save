@@ -215,6 +215,9 @@ a {
   min-height: 90vh;
   align-items: center;
 }
+.podcast-container iframe {
+  margin: 5rem;
+}
 .podcast-container .player-container {
   background-color: #4D4C4C;
   border-radius: 2.4rem;

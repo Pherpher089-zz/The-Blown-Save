@@ -7,7 +7,7 @@ function HomePage() {
     return (
         <div>
             <HeroSection />
-            <LiveStream />
+            {/* <LiveStream /> */}
             <PodcastSection />
             <MerchSection />
         </div>

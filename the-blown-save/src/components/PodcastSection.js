@@ -45,6 +45,7 @@ const backgroundStyle = {
 function PodcastSection(props) {
     return (
         <div className='podcast-container' style={backgroundStyle}>
+            <iframe width="1120rem" height="630rem" src="https://www.youtube.com/embed/jxOcVQNQXhU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div className='player-container'>
                 <div className='player-inner'>
                     <Podcast />
