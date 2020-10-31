@@ -36,10 +36,10 @@ const icons = [
     { img: SpreakerIcon, link: 'https://www.spreaker.com/show/the-blown-save-podcast' }
 ]
 
-const backgroundImgs = [Hero_Img_00, Hero_Img_01, Hero_Img_02, Hero_Img_04, Hero_Img_05, Hero_Img_06]
+const backgroundImgs = [Hero_Img_00, Hero_Img_01, Hero_Img_02, Hero_Img_04, Hero_Img_05]
 
 const backgroundStyle = {
-    "backgroundImage": `url(${backgroundImgs[Math.floor(Math.random() * 6)]})`
+    "backgroundImage": `url(${backgroundImgs[Math.floor(Math.random() * 5)]})`
 }
 
 function PodcastSection(props) {
