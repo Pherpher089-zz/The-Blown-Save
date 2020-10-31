@@ -5,13 +5,14 @@ import WhiteNoise from '../imgs/white_noise.gif'
 function LiveStream() {
     return (
         <div className='live-stream-container' >
-            <ReactLivestream
-                className='live-stream'
-                platform="youtube"
-                youtubeApiKey='AIzaSyDxC4SstM4akaTjwYrrAe7pPv9VDfxDrpQ'
-                youtubeChannelId="UCOxqgCwgOqC2lMqC5PYz_Dg"
-                offlineComponent={<OfflineComponent />}
-            />
+            <iframe width="1120rem" height="630rem" src="https://www.youtube.com/embed/jxOcVQNQXhU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {/* <ReactLivestream
+            className='live-stream'
+            platform="youtube"
+            youtubeApiKey='AIzaSyDxC4SstM4akaTjwYrrAe7pPv9VDfxDrpQ'
+            youtubeChannelId="UC1pACXxUjIWNDuU-kY1OX0Q"
+            offlineComponent={<OfflineComponent />}
+        /> */}
         </div>
     )
 }

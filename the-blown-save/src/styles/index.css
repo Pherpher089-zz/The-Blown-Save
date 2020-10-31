@@ -158,6 +158,13 @@ a {
   border: 2px solid #a00000;
 }
 
+.live-stream-container {
+  background-color: #4D4C4C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
 .live-stream-container .live-srtream {
   min-height: 20vh;
 }
