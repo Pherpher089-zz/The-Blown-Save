@@ -387,7 +387,7 @@ a {
 .merch-container .goRight, .merch-container .goLeft {
   position: absolute;
   width: 10rem;
-  top: 285%;
+  top: 205%;
   border: none;
   background: none;
 }
